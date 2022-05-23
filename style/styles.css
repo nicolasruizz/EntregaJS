@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap');
+body{
+    font-family: 'Comic Neue', cursive;
+    background-color: #388595;
+};
+
+
+/* NAV-BAR */
+.nav-logo{
+    width: 1%;
+    height: 1%;
+}
+
+.navbar{
+    height: 13%;
+    margin: 1rem;
+    border-radius: 25px;
+}
+
+.tipoNav{
+    font-size: x-large;
+    color:#388595;
+
+}
+/* CARRUSEL */
+.carru{
+    margin-top:5%;
+
+};
+.carousel-foto {
+    width: 80%;
+    height: 50%;
+
+}
+/* Tarjetas de contacto */
+.contCard {
+    border: inset;
+    border-radius: 15px 0;
+    border-right-color: rgb(20, 19, 54);
+    background-color: #D5e5e8;
+}
+.serv-index{
+    background: linear-gradient(rgba(155, 153, 153, 0.7), rgba(114, 113, 113, 0.7)), url("../images/servicios.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+.btn-serv{
+    background-color: #388595;
+    color: white;
+    align-items: center;
+    
+}
+.btn-link{
+    color: white;
+    text-decoration: none;
+}
+.card{
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    background-color: #D5e5e8;
+}
+.leters-index{
+    font-family: 'Comic Neue', cursive; 
+    font-weight: 700; 
+}
+
+/* Formulario*/
+
+form{
+    background-color: #D5e5e8;
+    margin: 2% 0 2% 5%;
+    background-color: #D5e5e8;
+    width: 35%;
+    justify-content: center;
+    align-items: center;
+    border: #388595;
+    box-shadow: 7px 13px 37px rgb(20, 19, 54);
+}
+
+form label{
+    font-weight: 700;
+}
+form input, form textarea{
+    border:none;
+    border-bottom: 2px solid #388595 ;
+    width: 50px;
+    font-size: 15px;
+}
+.cont-enviar{
+    font-size: 15px;
+    cursor: pointer;
+
+}
+.contacto{
+    background-color: #D5e5e8;
+    box-shadow: 7px 13px 37px rgb(20, 19, 54);
+}
+section div div, section div div a {
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+.contacto-titulo{
+    font-weight: 700;
+    margin-left: 7%;
+}
+.vacio{
+    height: 100px;
+}
+.shadow{
+    box-shadow: 7px 13px 37px rgb(20, 19, 54);
+}

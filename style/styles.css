@@ -5,8 +5,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap');
 body{
     font-family: 'Comic Neue', cursive;
-    background-color: #388595;
-};
+        background: #388595;
+        background: -webkit-linear-gradient(to right, #7db9c5, #388595);
+        background: linear-gradient(to right, #7db9c5, #388595)
+        }
 
 
 /* NAV-BAR */
@@ -136,3 +138,43 @@ section div div, section div div a {
 .shadow{
     box-shadow: 7px 13px 37px rgb(20, 19, 54);
 }
+
+/*loggin*/
+
+.gradient-custom {
+    background: #388595;
+    background: -webkit-linear-gradient(to right, #95BEC6, #388595);
+    background: linear-gradient(to right, #95BEC6, #388595)
+    }
+
+
+.hidden{
+    visibility: hidden;
+    height: 0;
+}
+.aparece{
+    visibility: visible;
+    height: 100%;
+}
+
+.arrow-left {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    line-height: 100px;
+    margin-left: 50px;
+    position: relative;
+    width: 300px;
+    height: 100px;
+  }
+  
+  .arrow-left.active:before {
+    content: '';
+    position: absolute;
+    left: -99px;
+    width: 0;
+    height: 0;
+    /* esta es la parte importante */
+    border: transparent solid 50px;
+    border-right-color: #388595;
+  }

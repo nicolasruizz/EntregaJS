@@ -1,3 +1,4 @@
+
 const error = () => Swal.fire({
     icon: 'error',
     title: 'Oops...',
@@ -13,8 +14,17 @@ function ingresar(e){
     let resultadoUs = document.querySelector("#usuario").value;
     let resultadoPw = document.querySelector("#pw").value;
 
-    if(resultadoUs === "hernansartorio" && resultadoPw === "logisticas3"){console.log("Usted puede ingresar")
-    location.href="./novedades.html"}else{
+    if(resultadoUs === "hernansartorio" && resultadoPw === "logisticas3"){
+      console.log("Usted puede ingresar")
+      fetch("../db.json")
+      .then((res) => res.json())
+      .then((data) => {
+          console.log(data)
+          localStorage.setItem('NovedadesLS', JSON.stringify(data))
+          location.href="./novedades.html"
+      })
+      
+  }else{
       error()
       setInterval("location.reload()",2000)}
 }

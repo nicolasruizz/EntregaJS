@@ -79,7 +79,7 @@ function crearN(e){
     abrirMenu("abrirmenu")
     }}
   
-
+// BUSCAR NOVEDADES
 document.querySelector("#formBuscar").addEventListener("submit",buscarN)
 function buscarN(e){
     e.preventDefault();
@@ -104,7 +104,7 @@ function buscarN(e){
     document.querySelector("#formBuscar").reset();
 
 }
-
+// BORRAR NOVEDADES
 document.querySelector("#formBorrar").addEventListener("submit",borrarN)
 function borrarN(e){
     e.preventDefault();
@@ -113,6 +113,7 @@ function borrarN(e){
     let novLS = JSON.parse(localStorage.getItem('NovedadesLS'));
     console.log(novLS)
     let comparar = novLS.find(novedad => novedad.nropaquete == bnrpq)
+    console.log(comparar)
     if (comparar != undefined){   
         bMostrar =`  <p>Chofer: ${comparar.chofer}</p><br>
                     <p>Cliente: ${comparar.cliente}</p><br>
@@ -125,10 +126,11 @@ function borrarN(e){
                     document.querySelector("#borrarResult").innerHTML= bMostrar
                     document.querySelector("#afirmacion").addEventListener("click", eliminarN)
                        function eliminarN(){
-                           novLS.splice(comparar)
+                        console.log(comparar)
+                        console.log(novLS)
+                           novLS.splice(0, 1, comparar)
                            console.log(novLS)
                            localStorage.setItem('NovedadesLS', JSON.stringify(novLS))
-                           console.log(novLS)
                            Swal.fire({
                             text: 'BORRASTE UNA NOVEDAD ',
                             timer: 5000,

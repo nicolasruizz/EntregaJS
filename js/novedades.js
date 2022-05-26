@@ -128,7 +128,7 @@ function borrarN(e){
                        function eliminarN(){
                         console.log(comparar)
                         console.log(novLS)
-                           novLS.splice(0, 1, comparar)
+                           novLS.splice(comparar)
                            console.log(novLS)
                            localStorage.setItem('NovedadesLS', JSON.stringify(novLS))
                            Swal.fire({

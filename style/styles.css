@@ -13,8 +13,12 @@ body{
 
 /* NAV-BAR */
 .nav-logo{
-    width: 1%;
-    height: 1%;
+    width: 5%;
+    height: 5%;
+}
+.img-logo{
+    width: 80%;
+    height: 80%;
 }
 
 .navbar{
@@ -174,7 +178,6 @@ section div div, section div div a {
     left: -99px;
     width: 0;
     height: 0;
-    /* esta es la parte importante */
     border: transparent solid 50px;
     border-right-color: #388595;
   }
